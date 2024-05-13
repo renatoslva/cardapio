@@ -818,6 +818,14 @@ video {
   display: none;
 }
 
+.h-32 {
+  height: 8rem;
+}
+
+.w-32 {
+  width: 8rem;
+}
+
 .w-\[this-is\\\\\] {
   width: this-is\\;
 }
@@ -828,10 +836,6 @@ video {
 
 .w-\[weird-and-invalid\] {
   width: weird-and-invalid;
-}
-
-.w-32 {
-  width: 8rem;
 }
 
 .flex-shrink {
@@ -2364,10 +2368,6 @@ video {
   transition-duration: 150ms;
 }
 
-.duration-200 {
-  transition-duration: 200ms;
-}
-
 .ease-in {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
@@ -2432,6 +2432,11 @@ video {
 
 body{
   background-color: #f6f7f8 ;
+}
+
+img .hover{
+  scale: 110px;
+  animation-duration: 200px;
 }
 
 @media (min-width: 640px) {
@@ -2504,4 +2509,4 @@ body{
       paint-order: markers;
     }
   }
-}    
+}

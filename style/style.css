@@ -6,3 +6,7 @@
 body{
 background-color: #f6f7f8 ;
 }    
+img .hover{
+ scale: 110px;
+ animation-duration: 200px;
+ }

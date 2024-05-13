@@ -4,9 +4,26 @@
 
 
 body{
-background-color: #f6f7f8 ;
-}    
-img .hover{
- scale: 110px;
- animation-duration: 200px;
- }
+background-color: #f1f6fa ;
+} 
+div{
+    padding: 20px;
+    margin: auto;
+}   
+img {
+    transition: transform 0.5s ease;
+    cursor: pointer;
+    
+
+  }
+  
+  img:hover {
+    transform: scale(1.5);
+    animation: pulse 1s infinite;
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+  }

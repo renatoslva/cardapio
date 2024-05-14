@@ -44,7 +44,7 @@
     </header>
 
     <h2 class="text-2xl font-bold text-center md:text-3xl mt-9 mb-6">
-      Conheça nosso Menu
+      Conheça nosso Cardápio
     </h2>
 
     <div id="menu">
@@ -259,33 +259,71 @@
       </main>
 
       <div class="mx-auto max-w-7x1 px-2 my-2">
-        <h2 class="font-bold text-5x1 text-center" >
+        <h2 class="w-full bg-red-300 flex items-center justify-center" >
           Bebidas
         </h2>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
-        <div class="flex gap-2 w-full">
-          <img
-            src="assets/refri-1.png"
-            alt="refrigente" 
-            class="duration-300 rounded-md hover:scale-110 h-28 w-28 hover:-rotate-3"
-          />
-
-          <div class="w-full">
-            <p class="font-bold">Coca-Cola</p>
-            <div class="flex items-center gap-2 justify-between mt-3">
-              <p class="font-bold text-lg">R$ 10.00</p>
-              <button
-                class="bg-gray-900 px-5 rounded add-to-card-btn"
-                data-name="Coca-Cola"
-                data-price="10.00"
-              >
-                <i class="fa fa-cart-plus text-lg text-white"> </i>
-              </button>
+      <div id="menu">
+        <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+          <div class="flex gap-2">
+            <img
+              src="assets/refri-1.png"
+              alt="coca "
+              class="duration-300 rounded-md hover:scale-110 h-28 w-28 hover:-rotate-3"
+            />
+  
+            <div>
+              <p class="font-bold">Coca Lata</p>
+             
+              <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-lg">R$ 10.00</p>
+                <button
+                  class="bg-gray-900 px-5 rounded add-to-card-btn"
+                  data-name="Coca Lata"
+                  data-price="10.00"
+                >
+                  <i class="fa fa-cart-plus text-lg text-white"> </i>
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
+       
+            
+              <div class="flex gap-2">
+                <img
+                  src="assets/refri-2.png"
+                  alt="hamburquer "
+                  class="duration-300 rounded-md hover:scale-110 h-28 w-28 hover:-rotate-3"
+                />
+      
+                <div>
+                  <p class="font-bold">Guaraná</p>
+                 
+                  <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold text-lg">R$ 9.90</p>
+                    <button
+                      class="bg-gray-900 px-5 rounded add-to-card-btn"
+                      data-name="Guaraná"
+                      data-price="9.90"
+                    >
+                      <i class="fa fa-cart-plus text-lg text-white"> </i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </main>
+        
+
+
+
+    <footer class="w-full bg-red-500  fixed bottom-0 z-40 flex items-center justify-center">
+
+    <button class="flex items-center gap-2 text-white font-bold" id="card-btn">
+
+      (<span id="cart-count">2</span>)
+ Veja o meu carrinho
+      <i class="fa fa-cart-plus text-lg text-white"> </i>
+    </button>
+  </footer>
   </body>
 </html>

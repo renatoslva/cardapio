@@ -6,24 +6,7 @@
 body{
 background-color: #d1d8dd ;
 } 
-div{
-    padding: 20px;
-    margin: auto;
-}   
-img {
-    transition: transform 0.5s ease;
-    cursor: pointer;
-    
 
-  }
-  
-  img:hover {
-    transform: scale(1.5);
-    animation: pulse 1s infinite;
-  }
-  
-  @keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.2); }
-    100% { transform: scale(1); }
-  }
+img{
+  cursor: pointer;
+}

@@ -15,11 +15,22 @@
         "ignore": [
           "-webkit-text-size-adjust",
           "contain",
-          "-webkit-tap-highlight-color"
+          "-webkit-tap-highlight-color",
+          "forced-color-adjust",
+          "overscroll-behavior-y",
+          "backdrop-filter",
+          "scroll-snap-stop",
+          "break-before: page"
         ]
       }
     ],
     "button-type": "off",
     "axe/language": "off"
-  }
+  },
+  "browserslist": [
+    "defaults",
+    "not ie 11",
+    "not ios_saf <= 17.4",
+    "not safari <= 17.4"
+  ]
 }

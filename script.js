@@ -18,4 +18,8 @@ cartModal.addEventListener("click", function(event){
         cartModal.style.display = "none"
     }
 })
+
+closeModalBtn.addEventListener("click", function(){
+    cartModal.style.display = "none"
+})
 console.log(cartModal)

@@ -20,7 +20,33 @@
           "overscroll-behavior-y",
           "backdrop-filter",
           "scroll-snap-stop",
-          "break-before: page"
+          "break-before: page",
+          "break-before: column",
+          "break-inside: avoid-page",
+          "break-after: column",
+          "overflow: clip",
+          "overflow-y: clip",
+          "overscroll-behavior",
+          "overflow-x: clip",
+          "overflow-x: clip",
+          "overscroll-behavior-x",
+          "overscroll-behavior-x",
+          "overscroll-behavior-x",
+          "break-after: page",
+          "overscroll-behavior-x",
+          "overscroll-behavior-x",
+          "overscroll-behavior-x",
+          "overscroll-behavior-x",
+          "overscroll-behavior-x",
+          "overscroll-behavior-x",
+          "break-after: page",
+          "overscroll-behavior-x",
+          "break-after: page",
+          "white-space: break-spaces",
+          "break-after: page",
+          "break-after: page",
+          "overscroll-behavior-x",
+          "white-space: break-spaces"
         ]
       }
     ],
@@ -31,6 +57,8 @@
     "defaults",
     "not ie 11",
     "not ios_saf <= 17.4",
-    "not safari <= 17.4"
+    "not safari <= 17.4",
+    "not opera <= 109",
+    "not opera <= 109"
   ]
 }

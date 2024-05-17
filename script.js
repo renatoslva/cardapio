@@ -10,10 +10,12 @@ const addressInput = document.getElementById("addreess")
 const addressWarn = document.getElementById("address-warn")
 
 
-let cart = [];
 
-cartBtn.addEventListener('click', function(){
+
+cartBtn.addEventListener('click', function(){ 
+   
     cartModal.style.display = "flex"
+    updateCartModal();   
 })
 
 cartModal.addEventListener("click", function(event){
@@ -34,6 +36,53 @@ let parentBotton = event.target.closest(".add-to-card-btn")
 
 const name = parentBotton.getAttribute("data-name")
 const price = parseFloat(parentBotton.getAttribute("data-price"))
+addToCart(name, price)
 //console.log(name)
 //console.log(price)
 })
+
+let cart = [];
+
+function addToCart(name, price) {
+            const existingItem = cart.find(item => item.name === name)
+            if(existingItem) {
+                existingItem.quantity += 1;
+        }else{
+
+            cart.push({ name,  price,  quantity: 1 });
+
+ //console.log(cart)
+        }
+
+updateCartModal();
+
+
+}
+
+function updateCartModal() {
+
+    cartItemsContainer.innerHTML = "";
+
+        let total = 0;
+
+
+        
+cart.forEach(item => {
+   
+    const cartItemElement = document.createElement("div");
+
+    cartItemElement.innerHTML = ` 
+            <div>
+        <div>
+                <p>${item.name}</p>
+                <p>${item.quantity}</p>
+                <p>${item.price}</p>
+        </div>
+    <div>
+                   0 <buttom> Remover </buttom>
+         </div>
+            </div> 
+                    `
+                    cartItemsContainer.appendChild(cartItemElement)
+        })
+}

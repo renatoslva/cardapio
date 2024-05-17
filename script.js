@@ -9,6 +9,9 @@ const cartCount = document.getElementById("cart-count")
 const addressInput = document.getElementById("addreess")
 const addressWarn = document.getElementById("address-warn")
 
+
+let cart = [];
+
 cartBtn.addEventListener('click', function(){
     cartModal.style.display = "flex"
 })
@@ -22,4 +25,15 @@ cartModal.addEventListener("click", function(event){
 closeModalBtn.addEventListener("click", function(){
     cartModal.style.display = "none"
 })
-console.log(cartModal)
+
+
+menu.addEventListener("click", function(event){
+//console.log (event.target)
+let parentBotton = event.target.closest(".add-to-card-btn")
+//console.log(parentBotton)
+
+const name = parentBotton.getAttribute("data-name")
+const price = parseFloat(parentBotton.getAttribute("data-price"))
+//console.log(name)
+//console.log(price)
+})

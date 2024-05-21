@@ -26,7 +26,7 @@
     <title>Cardápio</title>
     
   </head>
-  <div id="menu1">
+  <div id="menu">
     <body>
       <header class="w-full h-[420px] bg-slate-900 bg-home bg-cover bg-center">
         <div class="flex flex-col items-center justify-center w-full h-full">
@@ -47,10 +47,14 @@
           </div>
         </div>
       </header>
+
+
       <h2 class="mb-6 text-2xl font-bold text-center md:text-3xl mt-9">
         Conheça nosso Cardápio
       </h2>
+
       <div id="menu">
+
         <main class="grid grid-cols-1 px-2 mx-auto mb-16 md:grid-cols-2 gap-7 md:gap-10 max-w-7xl">
           <div class="flex gap-2">
             <img
@@ -307,7 +311,36 @@
                   </div>
                 </div>
               </main>
-    
+
+
+
+              <div class="fixed top-0 left-0 w-full h-full bg-black/60 z-[99] items-center justify-center hidden"   id ="cart-modal">
+   
+                <div class="p-5 text-2xl bg-white rounded-md min-w-[90%] md:min-w-[600px] items-center justify-center">
+                  <h2 class="mb-2 text-2xl font-bold text-center">
+                    Meu Carrinho
+                  </h2>
+                  <div id="cart-items" class="flex flex-col justify-between mb-2">
+                    <p class="font-bold">Total:   <span id="cart-total">0.00</span></p>
+                    <p class="mt-4 font-bold"> Endereço de entrega:</p>
+                    <input
+                    type="text"
+                    placeholder="Digite seu endereço completo...."
+                    id="address"
+                    class="w-full p-1 my-1 border-2 rounded"
+                    >
+                    <p class="hidden text-red-500" id="address-warn">Digete seu endereço completo!</p>
+                    <div class="flex items-center justify-between w-full mt-5">
+                      <button id="close-modal-btn">Fechar</button>
+                      <button id="checkout-btn" class="px-4 py-1 text-white bg-green-500 rounded">Finalizar pedido !</button>
+                
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              
       <footer id="cart-btn" class="fixed bottom-0 z-40 flex items-center justify-center w-full bg-red-500">
       <button class="flex items-center gap-2 font-bold text-white" >
         (<span id="cart-count">0</span>)
@@ -316,32 +349,13 @@
       </button>
     </footer>
     
-    <div class="fixed top-0 left-0 w-full h-full bg-black/60 z-[99] items-center justify-center hidden"       id ="cart-modal">
-   
-    <div class="p-5 text-2xl bg-white rounded-md min-w-[90%] md:min-w-[600px] items-center justify-center">
-      <h2 class="mb-2 text-2xl font-bold text-center">
-        Meu Carrinho
-      </h2>
-      <div id="cart-items" class="flex flex-col justify-between mb-2">
-        <p class="font-bold">Total:   <span id="cart-total">0.00</span></p>
-        <p class="mt-4 font-bold"> Endereço de entrega:</p>
-        <input
-        type="text"
-        placeholder="Digite seu endereço completo...."
-        id="address"
-        class="w-full p-1 my-1 border-2 rounded"
-        >
-        <p class="hidden text-red-500" id="address-warn">Digete seu endereço completo!</p>
-        <div class="flex items-center justify-between w-full mt-5">
-          <button id="close-modal-btn">Fechar</button>
-          <button id="checkout-btn" class="px-4 py-1 text-white bg-green-500 rounded">Finalizar pedido !</button>
-    
-        </div>
-      </div>
-    </div>
-    
-    </div>
-  </div>
+  
+
+
+
+
+</div>
+
   <script src="script.js"></script>
   </body>
 </html>

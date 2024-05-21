@@ -1,3 +1,5 @@
+const { updateCartModal } = require("./updateCartModal")
+
 const menu = document.getElementById("menu1")
 const cartBtn = document.getElementById("cart-btn")
 const cartModal = document.getElementById("cart-modal")
@@ -68,7 +70,6 @@ function updateCartModal() {
 
         
 cart.forEach(item => {
-   
     const cartItemElement = document.createElement("div");
 
     cartItemElement.innerHTML = ` 

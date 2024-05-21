@@ -14,8 +14,9 @@ let cart = [];
 
 
 cartBtn.addEventListener("click",  function(){  
-    updateCartModal()
+
 cartModal.style.display = "flex"
+updateCartModal()
 })
 
 cartModal.addEventListener("click", function(event){
